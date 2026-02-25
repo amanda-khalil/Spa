@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Unna dig en spaupplevelse på Seranova i Relaxbyn. Gör din bokning redan idag och njut av en avslappnande vardag eller helg">
+        <title>Boka spa- och hotellpaket vid havet - Seranova</title>
+        <link href="css/index.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/517467af03.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <img src="images/logo.png" alt="seranova-logo with a lotus flower">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="index.html">HEM</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">SPA</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">HOTELL</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">MÖTEN</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search-form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Sök">
+                </form>
+            </div>
+
+            <div id="book-image-container" class="background-image">
+                <h1>Hej! Vad vill du boka?</h1>
+                <div>
+                    <a href="#day-img">Dagspa</a>
+                    <a href="#evening-img">Kvällsspa</a>
+                    <a href="#overnight-img">Övernattning</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="experiences-offers-section">
+                <h2 id="offers-heading">Våra erbjudanden</h2>
+                <div class="offers-container experiences-offers-container1">
+                    <img id="day-img" src="images/jacuzzi.jpg" alt="indoor jacuzzi">
+                    <h3>Dagspa med frukostlyx</h3>
+                    <p>Från 600:-/person</p>
+                    <p>Njut av en härlig frukost med doften av nybryggt kaffe, te och nygräddade bakverk. Låt smakerna ge energi inför en dag av välbefinnande. Känn hur varje stund vid frukostbordet blir en chans att omfamna lugnet och fylla kroppen med ny kraft.</p>
+                    <p>Inkluderar:</p>
+                    <ul>
+                        <li>Tillgång till seranova spa mellan kl. 09.00-13.00</li>
+                        <li>Frukostbuffé med nybakat bröd, kaffe, te och färska juicer</li>
+                        <li>Lån av badrock, tofflor och handduk</li>
+                    </ul>
+                    <a class="bookmark-form" href="#booking-form-section">BOKA</a>
+                </div>
+                <div class="offers-container experiences-offers-container2">
+                    <img id="evening-img" src="images/evening-pool.jpg" alt="indoor pool in the evening">
+                    <h3>Kvällsspa med middag</h3>
+                    <p>Från 650:-/person</p>
+                    <p>Unna dig en kväll fylld av lyx och ro – från välkomstdrink till en härlig två-rätters middag. Koppla av i vår relaxavdelning och utomhusbad medan stjärnorna tänds ovanför.</p>
+                    <p>Inkluderar:</p>
+                    <ul>
+                        <li>Tillgång till seranova spa mellan kl. 17.00-21.00</li>
+                        <li>Välkomstdrink (alkoholfritt bubbel eller te)</li>
+                        <li>Middagsmeny med två rätter</li>
+                        <li>Kvällsstämning, tända ljus och utomhusbad under stjärnorna</li>
+                        <li>Lån av badrock, tofflor och handduk</li>
+                    </ul>
+                    <a class="bookmark-form" href="#booking-form-section">BOKA</a>
+                </div>
+                <div class="offers-container experiences-offers-container3">
+                    <img id="overnight-img" src="images/relax.jpg" alt="a smiling woman in a bath robe with a cup of tea and a magazine">
+                    <h3>Övernattning</h3>
+                    <p>Från 1190:-/person</p>
+                    <p>Njut av en natt i våra lyxiga rum, koppla av i spaavdelningen och starta dagen med en härlig frukostbuffé – en perfekt paus från vardagen.</p>
+                    <p>Inkluderar:</p>
+                    <ul>
+                        <li>Incheckning från 15.00, utcheckning kl 11.00</li>
+                        <li>Boende i ett av våra bekväma spa-rum eller sviter</li>
+                        <li>Frukostbuffé med nybakat bröd, kaffe, te och färska juicer</li>
+                        <li>Middagsmeny med två rätter</li>
+                        <li>En 50-minuters valfri behandling (massage, ansiktsbehandling eller fotvård)</li>
+                        <li>Badrock, tofflor och handduk på rummet</li>
+                    </ul>
+                    <a class="bookmark-form" href="#booking-form-section">BOKA</a>
+                </div>
+            </section>
+
+            <section id="booking-form-section">
+                <form id="booking-form">
+                    <h2>Boka tid här</h2>
+                    <div id="booking-date-container">
+                        <input type="date" name="date" required>
+                        <input type="number" name="guests" placeholder="Antal gäster *" required>
+                        <input type="number" name="rooms" placeholder="Antal rum *" required>
+                    </div>
+                    <select name="spa-package" required>
+                        <option value="">--Välj ett paket--</option>
+                        <option value="Dagspa">Dagspa</option>
+                        <option value="Kvällsspa">Kvällsspa</option>
+                        <option value="Övernattning">Övernattning</option>
+                    </select>
+                    <div>
+                        <input type="text" name="first-name" placeholder="Förnamn *" required>
+                        <input type="text" name="last-name" placeholder="Efternamn *" required>
+                    </div>
+                    <div>
+                        <input class="tel-email" type="email" name="email" placeholder="E-post *" required>
+                        <input class="tel-email" type="tel" name="number" placeholder="Telefonnummer *" maxlength="12" required>
+                    </div>
+                    <textarea name="requests" placeholder="Speciella önskemål" rows="5" cols="63"></textarea>
+                    <button type="submit">Skicka</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="arrow-top-page">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+            <form>
+                <p class="subscribe-paragraph">Prenumerera på vårt nyhetsbrev!</p>
+                <div class="news-container">
+                    <p class="news-paragraph">Vilka nyheter vill du få?</p>
+                    <div>
+                        <input id="offers" name="offers" type="checkbox"   value="erbjudanden">
+                        <label for="offers">Ebjudanden</label>
+                    </div>
+                    <div>
+                        <input id="recommendations" name="recommendations" type="checkbox" value="rekommendationer">
+                        <label for="recommendations">Rekommendationer</label>
+                    </div>
+                    <div>
+                        <input id="surveys" name="surveys" type="checkbox" value="undersökningar">
+                        <label for="surveys">Undersökningar</label>
+                    </div>
+                </div>
+                <input class="email" type="email" name="email" placeholder="Din e-postadress *" required>
+                <button class="submit" type="submit">Prenumerera<i class="fa-solid fa-envelope"></i></button>
+            </form>
+
+            <div class="contact-follow-container">
+                <div class="contact-us">
+                    <p class="contact-paragraph contact-follow-paragraph">KONTAKT</p>
+                    <p>Telefon: +46701234567</p>
+                    <p>E-post: info@seranova.se</p>
+                    <p>Adress:</p>
+                    <p>Harmoni Väg 7</p>
+                    <p>987 65 Relaxbyn</p>
+                    <p>Sverige</p>
+                </div>
+                <div class="follow-us">
+                    <p class="follow-paragraph contact-follow-paragraph">Följ oss på:</p>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="follow-icons fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="follow-icons fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="follow-icons fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <i class="follow-icons fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p class="copyright-paragraph">&copy; Copyright 2025 Amanda Khalil</p>
+            </div>
+        </footer>
+    </body>
+</html>
